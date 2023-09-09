@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Monolog';
+    src: url('../fonts/monolog.ttf');
+}
+
+/* page part: date */
+.settings_app {
+    transition: all 1s;
+    opacity: 0;
+}
+
+.date {
+    font-size: 20.5px;
+    display: flex;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+.date_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.date_btn {
+    transition: all 1s;
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px 40px 5px 40px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 28px;
+    color: #fff;
+    border: 2px solid #ffae00;
+}
+.date_btn:focus {
+    background-color: #ffae0023;
+}
+.date_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+}
+.date_example {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 32px;
+}
+.date_example_element {
+    border-radius: 18px;
+    margin: 4px;
+    padding: 5px 7px 5px 7px;
+    border: 2px solid #333333;
+    background-color: #111111;
+}
+.date_submit {
+    transition: all 1s;
+    margin-top: 50px;
+    padding: 10.5px;
+    border-bottom: 1.8px solid #ffee00;
+    color: #fff;
+    font-weight: 300;
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.date_submit:hover {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.min_date {
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.status_date {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #9b9b9b;
+}
+
+@media screen and (max-width: 480px) {
+    .date_example {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 10px;
+    }
+    .date_example_element {
+        margin-top: 10px;
+    }
+    .date_btn {
+        padding: 5px 25px 5px 25px;
+        width: 40px;
+        background-color: #000;
+        border-radius: 28px;
+        color: #fff;
+        border: 2px solid #ffae00;
+    }
+}
+
