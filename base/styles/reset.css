@@ -1,0 +1,123 @@
+/* @font-face {
+    font-family: 'Monolog';
+    src: url('../fonts/monolog.ttf');
+} */
+@font-face {
+    font-family: 'Laqula';
+    src: url('../fonts/LaqulaDemoRegular.ttf');
+}
+@font-face {
+    font-family: 'Geologica';
+    src: url('../fonts/Geologica.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Geologica';
+    color: #fff;
+    background-color: #000000;
+}
+a {
+	font-family: 'Geologica';
+    color: #fff;
+    text-decoration: none;
+}
+
+.main, .footer {
+	transition: all 1s;
+	opacity: 0;
+}
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo .logo_animate {
+    opacity: 0;
+    transition: all 1s;
+    font-size: 80px;
+    font-family: 'Laqula';
+    color: #fff;
+}
+.logo .logo_animate:hover {
+    color: #ffc400;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input, label, select, button, textarea {
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+    vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;	
+	appearance: textfield;
+}
+input:focus{
+	outline:0;
+}
+
+/* All of our custom controls should be what we expect them to be */
+input, textarea {
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button, input[type=reset], input[type=button], input[type=submit], input[type=checkbox], input[type=radio], select {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+::-webkit-search-decoration {
+	display:none;
+}
+
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+	/* Fix IE7 display bug */
+	overflow:visible;
+	width:auto;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea {
+	vertical-align:top;
+	overflow:auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select[multiple] 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+}
+button {
+	font-family: 'Geologica';
+	font-weight: normal;
+	color: #fff;
+	font-size: 25px;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-weight: normal;
+}
