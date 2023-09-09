@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgs/logo.png">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/date.css">
+    <title>Life Event</title>   
+</head>
+<body>
+    <div class="app">
+        <div class="logo">
+            <a href="../../index.html" class="logo"><span class="logo_animate">Le</span></a>
+        </div>
+        <div class="settings_app">
+            <p class="date_example">Input date birthday: <span class="date_example_element"><span id="day">00.</span> <span id="month">00.</span> <span id="year">0000</span></span></p>
+            <div class="date">
+                <div class="date_container">
+                    <div class="date_block">
+                        <input type="number" class="date_btn" id="day_btn">
+                        <span class="day_indicator">day</span>
+                    </div>
+                    <div class="date_block">
+                        <input type="number" class="date_btn" id="month_btn">
+                        <span class="month_indicator">month</span>
+                    </div>
+                    <div class="date_block">
+                        <input type="number" class="date_btn" id="year_btn">
+                        <span class="year_indicator">year</span>
+                    </div>
+                </div>
+                <div class="validation">
+                    <button class="date_submit">Submit</button>
+                </div>
+                <p class="min_date">Minimal year: 1984</p>
+            </div>
+        </div>
+    </div>    
+    <script src="../scripts/date.js"></script>
+    <script src="../scripts/updateAnimate.js"></script>
+</body>
+</html>
